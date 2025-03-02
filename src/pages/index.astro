@@ -1,3 +1,4 @@
+astro
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
@@ -6,45 +7,40 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<html lang="zh-CN">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <h1>👋 欢迎来到我的个人博客</h1>
+            <p>
+                我是一名保险科技从业者，致力于探索保险与科技融合的前沿领域。这个博客是我分享专业见解和个人思考的空间。
+            </p>
+            <p>
+                在这里，我将定期发布关于以下主题的内容：
+            </p>
+            <ul>
+                <li>保险科技发展趋势与创新</li>
+                <li>数字化转型对保险行业的影响</li>
+                <li>人工智能与大数据在保险中的应用</li>
+                <li>保险产品设计与用户体验优化</li>
+                <li>行业洞察与实践经验分享</li>
+            </ul>
+            <p>
+                我希望通过这个平台，能与对保险科技感兴趣的同行、学者和爱好者建立联系，共同探讨行业发展与未来可能性。
+            </p>
+            <p>
+                请随时浏览我的<a href="/blog/">博客文章</a>，或通过页面底部的联系方式与我交流。感谢您的访问！
+            </p>
+            <div style="margin-top: 2rem; padding: 1rem; background-color: #f9f9f9; border-radius: 8px;">
+                <h3>最新动态</h3>
+                <p>
+                    我刚刚开始搭建这个博客，将会陆续更新关于保险科技领域的文章和见解。敬请期待！
+                </p>
+            </div>
+        </main>
+        <Footer />
+    </body>
 </html>
